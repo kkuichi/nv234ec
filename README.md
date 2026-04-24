@@ -4,12 +4,6 @@ Tento repozitár obsahuje kód k diplomovej práci o predikcii plnosti komunáln
 odpadových kontajnerov v Prahe. Rieši tri úlohy: odhad plnosti pred vývozom,
 predikciu plnosti 24 hodín dopredu a odhad počtu dní do dosiahnutia 85 % plnosti.
 
-## Dáta
-
-Práca pracuje s dátami zo senzorov plnosti odpadových kontajnerov v Prahe a 
-s meteorologickými dátami zo stanice Praha-Ruzyně v exportovanom formáte
-z portálu Meteostat.
-
 ## Obsah repozitára
 
 | Súbor / priečinok | Účel |
@@ -40,8 +34,7 @@ Voliteľné stĺpce rozširujú sadu príznakov a pipeline sa bez nich nezastav�
 `container_type`, `district`, `latitude`, `longitude`, `capacity`,
 `temperature`, `firealarm`.
 
-Meteorologické dáta sú samostatný CSV súbor, predvolene `weather.csv`,
-vo formáte Meteostat. Časový stĺpec môže byť `date` alebo `time`.
+Meteorologické dáta sú samostatný CSV súbor. Časový stĺpec môže byť `date` alebo `time`.
 Používané meteorologické stĺpce sú najmä `tavg`, `prcp`, `wspd` a `pres`.
 Ak súbor chýba, pipeline pokračuje bez meteorologických príznakov.
 
@@ -56,7 +49,6 @@ Cesty k obom súborom sa dajú zmeniť cez CLI argumenty alebo cez
 parametre triedy `Config`. Cesty a ostatné parametre sú zámerne
 centralizované, takže kód jednotlivých modulov nemusí poznať reálnu
 adresárovú štruktúru.
-
 
 ## Popis modulov
 
