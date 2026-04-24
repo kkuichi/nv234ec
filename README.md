@@ -17,6 +17,7 @@ predikciu plnosti 24 hodín dopredu a odhad počtu dní do dosiahnutia 85 % plno
 | `waste_forecasting/experiments/` | Tri hlavné experimenty A, B, C. |
 | `waste_forecasting/evaluation/` | Krížová validácia, stabilita pri viacerých seedoch, SHAP, ablačné štúdie, referenčné modely, reporty a vizualizácie. |
 | `tests/` | Jednotkové testy (`unittest`). |
+| `datasets/` | Použité datasety skomprimované vo formáte .zip. |
 
 ## Dátový model
 
