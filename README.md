@@ -39,12 +39,12 @@ Meteorologické dáta sú samostatný CSV súbor. Časový stĺpec môže byť `
 Používané meteorologické stĺpce sú najmä `tavg`, `prcp`, `wspd` a `pres`.
 Ak súbor chýba, pipeline pokračuje bez meteorologických príznakov.
 
-## Vstupnné súbory
+## Vstupné súbory
 
 Pipeline očakáva dve vstupné CSV v pracovnom adresári:
 
-- hlavný CSV s meraniami senzorov, predvolene `merged_dataset.csv`,
-- meteorologický CSV, predvolene `weather.csv`.
+- hlavný CSV s meraniami senzorov `merged_dataset.csv`,
+- meteorologický CSV `weather.csv`.
 
 Cesty k obom súborom sa dajú zmeniť cez CLI argumenty alebo cez
 parametre triedy `Config`. Cesty a ostatné parametre sú zámerne
